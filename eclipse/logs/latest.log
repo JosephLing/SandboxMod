@@ -1,15 +1,13 @@
-[10:39:28] [main/INFO]: Setting user: Player746
-[10:39:29] [Client thread/INFO]: LWJGL Version: 2.9.1
-[10:39:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
-[10:39:42] [Sound Library Loader/INFO]: Sound engine started
-[10:39:43] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[10:39:43] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[10:39:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
-[10:39:44] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[10:39:44] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[10:39:45] [Client thread/ERROR]: ########## GL ERROR ##########
-[10:39:45] [Client thread/ERROR]: @ Post startup
-[10:39:45] [Client thread/ERROR]: 1281: Invalid value
-[10:39:45] [Sound Library Loader/INFO]: Sound engine started
-[10:39:47] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[10:39:54] [Client thread/INFO]: Stopping!
+[11:00:50] [main/INFO]: Setting user: Player517
+[11:00:54] [Client thread/INFO]: LWJGL Version: 2.9.1
+[11:01:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
+[11:02:02] [Sound Library Loader/INFO]: Sound engine started
+[11:02:03] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:02:04] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:02:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
+[11:02:04] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[11:02:04] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[11:02:06] [Sound Library Loader/INFO]: Sound engine started
+[11:02:06] [Client thread/ERROR]: ########## GL ERROR ##########
+[11:02:06] [Client thread/ERROR]: @ Post startup
+[11:02:06] [Client thread/ERROR]: 1281: Invalid value
