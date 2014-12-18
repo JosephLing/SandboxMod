@@ -18,12 +18,12 @@ buildscript {
 apply plugin: 'forge'
 
 // speficially to the mod
-version = "1.7.2-1.0" // minecraft version - version of mod
+version = "1.7.10-1.0" // minecraft version - version of mod
 group= "com.Enigma.LM" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "LearningModding" // name of mod
 
 minecraft {
-    version = "1.7.2-10.12.2.1121" // version of minecraft forge
+    version = "1.7.10-10.13.0.1160" // version of minecraft forge
     assetDir = "eclipse/assets"
 }
 

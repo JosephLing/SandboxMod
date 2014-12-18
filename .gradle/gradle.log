@@ -8,10 +8,23 @@ The assetDir is deprecated!  Use runDir instead! runDir set to eclipse/assets/..
  MCP Data version : unknown
 ****************************
 :ideaModule
+Download http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-sources.jar
+Download http://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1-javadoc.jar
+Download http://repo1.maven.org/maven2/com/google/guava/guava/16.0/guava-16.0-sources.jar
+Download http://repo1.maven.org/maven2/com/google/guava/guava/16.0/guava-16.0-javadoc.jar
+Download http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1-sources.jar
+Download http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1-javadoc.jar
+Download http://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar
+Download http://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-javadoc.jar
+Download https://libraries.minecraft.net/com/mojang/authlib/1.5.13/authlib-1.5.13-sources.jar
+Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl/2.9.1/lwjgl-2.9.1-sources.jar
+Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl/2.9.1/lwjgl-2.9.1-javadoc.jar
+Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl_util/2.9.1/lwjgl_util-2.9.1-sources.jar
+Download http://repo1.maven.org/maven2/org/lwjgl/lwjgl/lwjgl_util/2.9.1/lwjgl_util-2.9.1-javadoc.jar
 :ideaProject
 :ideaWorkspace
 :idea
 
 BUILD SUCCESSFUL
 
-Total time: 46.553 secs
+Total time: 1 mins 0.294 secs
