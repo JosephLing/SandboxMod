@@ -1,4 +1,9 @@
 out/*
+*.iml
+*ipr
+*iws
+
+
 
 # Compiled source #
 ###################
