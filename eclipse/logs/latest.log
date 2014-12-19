@@ -1,25 +1,14 @@
-[16:56:49] [main/INFO]: Setting user: Player223
-[16:56:53] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:57:11] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
-[16:57:13] [Sound Library Loader/INFO]: Sound engine started
-[16:57:15] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:57:15] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:57:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
-[16:57:16] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:57:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:57:17] [Sound Library Loader/INFO]: Sound engine started
-[16:57:17] [Client thread/ERROR]: ########## GL ERROR ##########
-[16:57:17] [Client thread/ERROR]: @ Post startup
-[16:57:17] [Client thread/ERROR]: 1281: Invalid value
-[16:57:29] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:57:29] [Server thread/INFO]: Generating keypair
-[16:57:30] [Server thread/INFO]: Preparing start region for level 0
-[16:57:31] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:57:31] [Server thread/INFO]: Player223[local:E:ac2b36b9] logged in with entity id 183 at (288.7414783402427, 4.0, -40.90370253951566)
-[16:57:31] [Server thread/INFO]: Player223 joined the game
-[16:57:36] [Server thread/INFO]: Player223 has just earned the achievement [Taking Inventory]
-[16:57:36] [Client thread/INFO]: [CHAT] Player223 has just earned the achievement [Taking Inventory]
-[16:57:42] [Client thread/INFO]: [CHAT] LearnModdingTest:ExampleBlock, LearnModdingTest:Example
-[16:57:44] [Server thread/INFO]: [Player223: Given [tile.learnmoddingtest:Example.name] * 1 to Player223]
-[16:57:44] [Client thread/INFO]: [CHAT] Given [tile.learnmoddingtest:Example.name] * 1 to Player223
-[17:04:07] [Client Shutdown Thread/INFO]: Stopping server
+[16:35:16] [main/INFO]: Setting user: Player342
+[16:35:18] [Client thread/INFO]: LWJGL Version: 2.9.1
+[16:35:42] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
+[16:35:44] [Sound Library Loader/INFO]: Sound engine started
+[16:35:46] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:35:46] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:35:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Learn Modding Test
+[16:35:46] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[16:35:46] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[16:35:47] [Sound Library Loader/INFO]: Sound engine started
+[16:35:48] [Client thread/ERROR]: ########## GL ERROR ##########
+[16:35:48] [Client thread/ERROR]: @ Post startup
+[16:35:48] [Client thread/ERROR]: 1281: Invalid value
+[16:36:36] [Client thread/INFO]: Stopping!

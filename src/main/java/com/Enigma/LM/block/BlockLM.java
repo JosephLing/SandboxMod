@@ -1,5 +1,6 @@
 package com.Enigma.LM.block;
 
+import com.Enigma.LM.creativetab.CreativeTabLM;
 import com.Enigma.LM.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,11 +13,13 @@ public class BlockLM extends Block
     public BlockLM(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabLM.LM_TAB);
     }
 
     public BlockLM()
     {
         this(Material.rock);
+        this.setCreativeTab(CreativeTabLM.LM_TAB);
     }
 
     @Override

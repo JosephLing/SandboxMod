@@ -1,8 +1,10 @@
 package com.Enigma.LM;
 
+import com.Enigma.LM.client.handler.KeyInputEventHandler;
 import com.Enigma.LM.handler.ConfiguartionHandler;
 import com.Enigma.LM.init.ModBlocks;
 import com.Enigma.LM.init.ModItems;
+import com.Enigma.LM.init.Recipes;
 import com.Enigma.LM.proxy.IProxy;
 import com.Enigma.LM.reference.Reference;
 import com.Enigma.LM.utility.LogHelper;
@@ -12,6 +14,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.MOD_VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class LearnModdingTest
@@ -29,6 +32,8 @@ public class LearnModdingTest
         ConfiguartionHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfiguartionHandler());
 
+        proxy.registerKeyBindings();
+
         ModItems.init();
         ModBlocks.init();
 
@@ -39,8 +44,13 @@ public class LearnModdingTest
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
-        LogHelper.info("initalisation complete :)");
         // tile enitities, crafting recipes
+        FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+
+
+        Recipes.init();
+
+        LogHelper.info("initalisation complete :)");
     }
 
     @Mod.EventHandler
@@ -49,6 +59,13 @@ public class LearnModdingTest
         // wrapping things up
         LogHelper.info("Post initalisation complete :)");
 
+        /*
+        LogHelper.info("Registered Ores: ");
+        for (String Ore : OreDictionary.getOreNames())
+        {
+            LogHelper.info(Ore);
+        }
+        */
     }
 
 

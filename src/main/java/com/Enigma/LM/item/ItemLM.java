@@ -1,5 +1,6 @@
 package com.Enigma.LM.item;
 
+import com.Enigma.LM.creativetab.CreativeTabLM;
 import com.Enigma.LM.reference.Reference;
 import com.Enigma.LM.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
@@ -15,8 +16,25 @@ public class ItemLM extends Item
     public ItemLM()
     {
         // construcuter
+        /*
+        An item stack being an instance of item or an item block
 
+        multiple parts that make up an item stack
+
+        nbt -> named binary tag
+        can save all kinds of data to it
+
+        an item stack stores all its nbt data in a COMPOUND
+
+        tag compound not always initailized
+
+        nbt applies to tile entities
+
+
+
+         */
         super();
+        this.setCreativeTab(CreativeTabLM.LM_TAB);
 
     }
 
@@ -44,7 +62,5 @@ public class ItemLM extends Item
     public void registerIcons(IIconRegister iconRegister)
     {
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
-        LogHelper.info(itemIcon);
-        LogHelper.info(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 }
