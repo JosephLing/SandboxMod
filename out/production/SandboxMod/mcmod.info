@@ -1,0 +1,21 @@
+[
+{
+  "modid": "LearnModdingTest",
+  "name": "Learn Modding Test",
+  "description": "Playing around learning how to mod. So probably will be a little bit all over the place.",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Enigma"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

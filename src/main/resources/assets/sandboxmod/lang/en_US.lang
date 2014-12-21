@@ -1,0 +1,21 @@
+# can't have name = legendary item
+# needs to be name=legendary item
+
+# keys
+
+keys.SM.category=Sandbox Mod
+keys.SM.charge=Charge
+keys.SM.release=Release
+
+#creative tab
+itemGroup.sandboxmod=Sandbox mod
+
+# Item localizations
+item.sandboxmod:ExampleItem.name=Legendary Example Item
+item.sandboxmod:Exacabular.name=Excalaber
+item.sandboxmod:SwordTest.name=it worked!
+item.sandboxmod:IngotTest.name=mod ignot
+
+# block localizations
+tile.sandboxmod:ExampleBlock.name=Legendary Example Block
+
