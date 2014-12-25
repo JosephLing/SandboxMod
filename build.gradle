@@ -20,7 +20,7 @@ apply plugin: 'forge'
 // speficially to the mod
 version = "1.7.10-1.0" // minecraft version - version of mod
 group= "com.Enigma.SM" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "LearningModding" // name of mod
+archivesBaseName = "SandboxMod" // name of mod
 
 minecraft {
     version = "1.7.10-10.13.2.1230" // version of minecraft forge

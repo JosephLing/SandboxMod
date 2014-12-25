@@ -11,7 +11,10 @@ public class ConfiguartionHandler
 {
     public static Configuration configuration;
 
-    public static boolean testValue = false;
+    public static boolean DG_LOAD = false;
+    public static int DG_XSIZE = 50;
+    public static int DG_ZSIZE = 50;
+    public static int DG_nTRIES = 500;
 
     public static void init(File configFile)
     {
@@ -35,9 +38,16 @@ public class ConfiguartionHandler
         }
     }
 
+
     private static void loadConfiguation()
     {
-        testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "example config value");
+        DG_LOAD = configuration.getBoolean("LoadDG", Configuration.CATEGORY_GENERAL, false, "example config value");
+
+        DG_nTRIES = configuration.getInt("nDungeonRoomTries", Configuration.CATEGORY_GENERAL,100 ,2500, 1, "the number of attempts to create a room");
+        DG_XSIZE = configuration.getInt("nDungeonRoomTries", Configuration.CATEGORY_GENERAL,50, 50, 500, "how large the dungeon will be in the X direction");
+        DG_ZSIZE = configuration.getInt("nDungeonRoomTries", Configuration.CATEGORY_GENERAL,50, 50, 500, "how large the dungeon will be in the Z direction");
+
+
 
 
         if (configuration.hasChanged())

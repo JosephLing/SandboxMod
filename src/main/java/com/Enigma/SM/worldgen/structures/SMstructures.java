@@ -5,6 +5,12 @@ package com.Enigma.SM.worldgen.structures;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 
+/*
+CURRENTLY HIGHLY UNEFFICENT (is as laggy as other peoples code after testing)
+
+
+
+ */
 
 
 
