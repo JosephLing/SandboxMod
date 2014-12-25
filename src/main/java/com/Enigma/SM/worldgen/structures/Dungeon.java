@@ -1,14 +1,25 @@
 package com.Enigma.SM.worldgen.structures;
 
 
+import com.Enigma.SM.handler.ConfiguartionHandler;
+import com.Enigma.SM.init.ModBlocks;
 import com.Enigma.SM.utility.LogHelper;
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.init.Blocks;
+import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.tileentity.TileEntityMobSpawner;
+import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraftforge.common.ChestGenHooks;
 
 import java.util.Random;
+/*
+Generally probably reasonably inefficent method of generating a dungeon. But I don't know how to do the tree traversal
+stuff and things like that and this works and it produces good resutls.
+ */
+
+
 
 public class Dungeon implements IWorldGenerator
 {
@@ -19,15 +30,19 @@ public class Dungeon implements IWorldGenerator
     {
         int Xchunk = chunkX *15;
         int Zchunk = chunkZ *15;
-        int Y = 20;
-        int yHeight = 5;
-        if (Xchunk % 50 == 0 && Zchunk % 50 == 0 )
+        int Y = ConfiguartionHandler.DG_YValue;
+        int yHeight = 6;
+        if (Xchunk % 100 == 0 && Zchunk % 100 == 0 && random.nextInt(2) == 0)
         {
-            // && random.nextInt(2) == 0
-            LogHelper.info("generated dungoen");
-            char[][] Map = genMap(random, 50, 50, 500);
-            // 50, 50, 250
 
+            LogHelper.info("generated dungoen");
+            char[][] Map = genMap(random, ConfiguartionHandler.DG_XSIZE, ConfiguartionHandler.DG_ZSIZE, ConfiguartionHandler.DG_nTRIES);
+            // 50, 50, 250
+            int temp_ymax = world.getHeightValue(Xchunk, Zchunk)-Y+10;
+            for (int i = 0; i < temp_ymax; i++)
+            {
+                world.setBlock(Xchunk, Y+i, Zchunk, Blocks.gold_block, 0, 2);
+            }
             for (int Z = 0; Z < Map.length; Z++)
             {
                 for (int X = 0; X <Map[0].length ; X++)
@@ -36,7 +51,7 @@ public class Dungeon implements IWorldGenerator
                     {
                         for (int i = 1; i < yHeight; i++)
                         {
-                            world.setBlock(Xchunk + X, Y+i, Zchunk + Z, Blocks.stone, 0, 2);
+                            world.setBlock(Xchunk + X, Y+i, Zchunk + Z, ModBlocks.ExampleBlock, 0, 2);
 
                         }
                     }
@@ -51,12 +66,12 @@ public class Dungeon implements IWorldGenerator
                         {
                             world.setBlock(Xchunk + X, Y, Zchunk + Z, Blocks.cobblestone, 0, 2);
                         }
-                        for (int i = 1; i < yHeight-2; i++)
+                        for (int i = 1; i < yHeight-1; i++)
                         {
                             world.setBlock(Xchunk + X, Y+i, Zchunk + Z, Blocks.air, 0, 2);
 
                         }
-                        //world.setBlock(Xchunk + X,Y + yHeight, Zchunk + Z, Blocks.glass, 0, 2);
+
                     }
                     else if (Map[Z][X] == 'w')
                     {
@@ -89,15 +104,29 @@ public class Dungeon implements IWorldGenerator
                     }
                     else if (Map[Z][X] == 'c')
                     {
+                        /*
+                        current code below is not working as it was copied off the internet :)
+
+                        courses.vswe.se -> check out (maybe a little out of date but their will be some follow through hopefully)
+
+                        generate chest
+                        get chest inventory
+                        manipulate inventory (ON BOTH SERVER AND CLIENT SIDE) (this I think is the main area of the problem.. )
+
+
+                         */
                         world.setBlock(Xchunk + X, Y, Zchunk + Z, Blocks.cobblestone, 0, 2);
                         world.setBlock(Xchunk + X, Y+1, Zchunk + Z, Blocks.chest, 0, 2);
+                        TileEntityChest Chest = (TileEntityChest)world.getTileEntity(Xchunk + X, Y+1, Zchunk + Z);
+                        ChestGenHooks info = ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST);
+                        WeightedRandomChestContent.generateChestContents(random, info.getItems(random), Chest, info.getCount(random));
 
-                        for (int i = 2; i < yHeight-2; i++)
+                        for (int i = 2; i < yHeight-1; i++)
                         {
                             world.setBlock(Xchunk + X, Y+i, Zchunk + Z, Blocks.air, 0, 2);
 
                         }
-                        //world.setBlock(Xchunk + X,Y + yHeight, Zchunk + Z, Blocks.glass, 0, 2);
+
                     }
                     else if (Map[Z][X] == 's')
                     {
@@ -105,13 +134,22 @@ public class Dungeon implements IWorldGenerator
                         world.setBlock(Xchunk + X, Y+1, Zchunk + Z, Blocks.mob_spawner, 0, 2);
                         TileEntityMobSpawner Spawner = (TileEntityMobSpawner)world.getTileEntity(Xchunk + X, Y+1, Zchunk + Z);
                         Spawner.func_145881_a().setEntityName("Zombie");
-                        for (int i = 2; i < yHeight-2; i++)
+                        for (int i = 2; i < yHeight-1; i++)
                         {
                             world.setBlock(Xchunk + X, Y+i, Zchunk + Z, Blocks.air, 0, 2);
 
                         }
-                        //world.setBlock(Xchunk + X,Y + yHeight, Zchunk + Z, Blocks.glass, 0, 2);
+
                     }
+                    else if (Map[Z][X] == 'j')
+                    {
+                        for (int i = 0; i < yHeight; i++)
+                        {
+                            world.setBlock(Xchunk + X, Y+i, Zchunk + Z, ModBlocks.ExampleBlock, 1, 2);
+                        }
+                    }
+
+
                     // user for debugging this stuff below here isL:
                     else if (Map[Z][X] == 'd')
                     {
@@ -172,6 +210,26 @@ public class Dungeon implements IWorldGenerator
                     Square[Z][X] = 'w';
                 }
                 else
+                {
+                    Square[Z][X] = Char;
+
+                }
+            }
+        }
+        return Square;
+    }
+    private char[][] genStartingSquare(char Char, int x, int z)
+    {
+
+        char[][] Square = new char[z][x];
+        for (int X = 0; X < x; X++)
+        {
+            for (int Z = 0; Z < z; Z++)
+            {
+                if (Z == 0 || Z == z - 1 || X == 0 || X == x - 1)
+                {
+                    Square[Z][X] = 'j';
+                } else
                 {
                     Square[Z][X] = Char;
 
@@ -486,7 +544,7 @@ public class Dungeon implements IWorldGenerator
 
     private char[][] genMap(Random random, int X, int Z, int roomAttempts)
     {
-        char[][] Map = genSquare('+', X, Z);
+        char[][] Map = genStartingSquare('+', X, Z);
         for (int i = 0; i < roomAttempts; i++)
         {
             Map = this.genRoom(Map, random);

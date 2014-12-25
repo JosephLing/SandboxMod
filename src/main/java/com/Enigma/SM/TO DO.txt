@@ -1,0 +1,9 @@
+
+RESEARCH
+- client and server stuff particularly with title entities
+    - to aim to get items in chests
+
+
+- work out a way of locating the dungoens without randomly coming across them maybe....
+
+
