@@ -127,7 +127,7 @@ public class Dungeon implements IWorldGenerator
                         world.setBlock(Xchunk + X, Y, Zchunk + Z, Blocks.cobblestone, 0, 2);
                         world.setBlock(Xchunk + X, Y+1, Zchunk + Z, ModBlocks.LootChestBlock, 0, 2);
 
-                        if (random.nextInt(3) == 0)
+                        if (random.nextInt(2) == 0)
                         {
                             world.setBlock(Xchunk + X, Y+2, Zchunk + Z, ModBlocks.LootChestBlock, 0, 2);
                             for (int i = 2; i < yHeight-2; i++)

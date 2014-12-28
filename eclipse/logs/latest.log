@@ -1,147 +1,42 @@
-[23:37:54] [main/INFO]: Setting user: Player170
-[23:37:56] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:38:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
-[23:38:06] [Sound Library Loader/INFO]: Sound engine started
-[23:38:08] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:38:08] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:38:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
-[23:38:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:38:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:38:10] [Sound Library Loader/INFO]: Sound engine started
-[23:38:10] [Client thread/ERROR]: ########## GL ERROR ##########
-[23:38:10] [Client thread/ERROR]: @ Post startup
-[23:38:10] [Client thread/ERROR]: 1281: Invalid value
-[23:38:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[23:38:19] [Server thread/INFO]: Generating keypair
-[23:38:19] [Server thread/INFO]: Converting map!
-[23:38:19] [Server thread/INFO]: Scanning folders...
-[23:38:19] [Server thread/INFO]: Total conversion count is 0
-[23:38:20] [Server thread/INFO]: Preparing start region for level 0
-[23:38:21] [Server thread/INFO]: Preparing spawn area: 5%
-[23:38:22] [Server thread/INFO]: Preparing spawn area: 12%
-[23:38:23] [Server thread/INFO]: Preparing spawn area: 21%
-[23:38:27] [Server thread/INFO]: Preparing spawn area: 34%
-[23:38:28] [Server thread/INFO]: Preparing spawn area: 49%
-[23:38:29] [Server thread/INFO]: Preparing spawn area: 64%
-[23:38:30] [Server thread/INFO]: Preparing spawn area: 75%
-[23:38:31] [Server thread/INFO]: Preparing spawn area: 88%
-[23:38:32] [Server thread/INFO]: Changing view distance to 12, from 10
-[23:38:32] [Server thread/INFO]: Player170[local:E:24e79e09] logged in with entity id 231 at (96.5, 72.0, 259.5)
-[23:38:32] [Server thread/INFO]: Player170 joined the game
-[23:38:34] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3a563fa9[id=005a1bfb-b3e4-37aa-87e8-3ba2c8463cf4,name=Player170,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
-	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
-	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:148) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:133) [SkinManager$3.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) [?:1.7.0_60]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) [?:1.7.0_60]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [?:1.7.0_60]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [?:1.7.0_60]
-	at java.lang.Thread.run(Thread.java:745) [?:1.7.0_60]
-Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No name matching sessionserver.mojang.com found
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270) ~[?:1.7.0_60]
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341) ~[?:1.7.0_60]
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[?:1.7.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-Caused by: java.security.cert.CertificateException: No name matching sessionserver.mojang.com found
-	at sun.security.util.HostnameChecker.matchDNS(HostnameChecker.java:208) ~[?:1.7.0_60]
-	at sun.security.util.HostnameChecker.match(HostnameChecker.java:93) ~[?:1.7.0_60]
-	at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:347) ~[?:1.7.0_60]
-	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:203) ~[?:1.7.0_60]
-	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:126) ~[?:1.7.0_60]
-	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323) ~[?:1.7.0_60]
-	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868) ~[?:1.7.0_60]
-	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339) ~[?:1.7.0_60]
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185) ~[?:1.7.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300) ~[?:1.7.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.7.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[23:38:37] [Server thread/INFO]: Player170 has just earned the achievement [Taking Inventory]
-[23:38:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4951ms behind, skipping 99 tick(s)
-[23:38:37] [Client thread/INFO]: [CHAT] Player170 has just earned the achievement [Taking Inventory]
-[23:38:47] [Client thread/INFO]: Warning: Clientside chunk ticking took 250 ms
-[23:38:47] [Client thread/INFO]: Warning: Clientside chunk ticking took 215 ms
-[23:38:49] [Client thread/INFO]: Warning: Clientside chunk ticking took 154 ms
-[23:38:53] [Client thread/INFO]: Warning: Clientside chunk ticking took 221 ms
-[23:38:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 270 ms
-[23:38:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
-[23:39:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12391ms behind, skipping 247 tick(s)
-[23:39:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3717ms behind, skipping 74 tick(s)
-[23:39:17] [Server thread/INFO]: Saving and pausing game...
-[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:39:23] [Server thread/INFO]: Changing view distance to 9, from 12
-[23:40:06] [Server thread/INFO]: [Player170: Set own game mode to Survival Mode]
-[23:40:06] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[23:40:20] [Server thread/INFO]: [Player170: Set own game mode to Creative Mode]
-[23:40:20] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[23:41:08] [Client thread/INFO]: [CHAT] Seed: -3281329955902248917
-[23:41:15] [Server thread/INFO]: [Player170: Set own game mode to Survival Mode]
-[23:41:15] [Client thread/INFO]: [CHAT] Your game mode has been updated
-[23:41:38] [Server thread/INFO]: Saving and pausing game...
-[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:42:43] [Client thread/INFO]: Warning: Clientside chunk ticking took 160 ms
-[23:43:30] [Server thread/INFO]: Saving and pausing game...
-[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:43:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
-[23:43:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:43:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:43:42] [Sound Library Loader/INFO]: Sound engine started
-[23:47:03] [Client thread/INFO]: Warning: Clientside chunk ticking took 106 ms
-[23:49:20] [Server thread/WARN]: Player170 moved wrongly!
-[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 157 ms
-[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 115 ms
-[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 113 ms
-[23:49:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 141 ms
-[23:54:41] [Server thread/INFO]: Player170 was slain by Zombie
-[23:54:41] [Client thread/INFO]: [CHAT] Player170 was slain by Zombie
-[23:54:46] [Server thread/INFO]: Saving and pausing game...
-[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:54:47] [Server thread/INFO]: Stopping server
-[23:54:47] [Server thread/INFO]: Saving players
-[23:54:47] [Server thread/INFO]: Saving worlds
-[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:54:50] [Client thread/INFO]: Stopping!
+[17:39:55] [main/INFO]: Setting user: Player849
+[17:39:57] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:40:06] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
+[17:40:08] [Sound Library Loader/INFO]: Sound engine started
+[17:40:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:40:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:40:10] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
+[17:40:10] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:40:10] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:40:11] [Sound Library Loader/INFO]: Sound engine started
+[17:40:11] [Client thread/ERROR]: ########## GL ERROR ##########
+[17:40:11] [Client thread/ERROR]: @ Post startup
+[17:40:11] [Client thread/ERROR]: 1281: Invalid value
+[17:40:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:40:19] [Server thread/INFO]: Generating keypair
+[17:40:19] [Server thread/INFO]: Converting map!
+[17:40:19] [Server thread/INFO]: Scanning folders...
+[17:40:19] [Server thread/INFO]: Total conversion count is 0
+[17:40:23] [Server thread/INFO]: Preparing start region for level 0
+[17:40:26] [Server thread/INFO]: Preparing spawn area: 32%
+[17:40:26] [Server thread/INFO]: Changing view distance to 9, from 10
+[17:40:26] [Server thread/INFO]: Player849[local:E:3e2e179f] logged in with entity id 32 at (-866.5, 4.0, 1727.5)
+[17:40:26] [Server thread/INFO]: Player849 joined the game
+[17:40:29] [Server thread/INFO]: Player849 has just earned the achievement [Taking Inventory]
+[17:40:29] [Client thread/INFO]: [CHAT] Player849 has just earned the achievement [Taking Inventory]
+[17:41:21] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:41:21] [Server thread/INFO]: [Player849: Set own game mode to Survival Mode]
+[17:41:42] [Server thread/INFO]: [Player849: Set own game mode to Creative Mode]
+[17:41:42] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:41:56] [Server thread/INFO]: [Player849: Set own game mode to Survival Mode]
+[17:41:56] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[17:43:02] [Server thread/INFO]: Saving and pausing game...
+[17:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:43:02] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:43:03] [Server thread/INFO]: Stopping server
+[17:43:03] [Server thread/INFO]: Saving players
+[17:43:03] [Server thread/INFO]: Saving worlds
+[17:43:03] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:43:03] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:43:03] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:43:04] [Client thread/INFO]: Stopping!

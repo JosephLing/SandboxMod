@@ -32,24 +32,24 @@ public class LootChestBlock extends BlockSM
         - string (maybe)
         */
 
-        int ItemType = random.nextInt(6);
-        int Chance = random.nextInt(10);
+        int ItemType = random.nextInt(5);
+        int Chance = random.nextInt(30);
         switch (ItemType) {
             case 0: // precious metals
 
-                if (Chance == 0 )
+                if (Chance == 8)
                 {
                     return Items.coal;
                 }
-                else if (Chance <= 3 )
+                else if (Chance <= 14 )
                 {
                     return Items.gold_nugget;
                 }
-                else if (Chance <= 6)
+                else if (Chance <= 22)
                 {
                     return Items.gold_ingot;
                 }
-                else if (Chance <= 8)
+                else if (Chance <= 27)
                 {
                     return Items.emerald;
                 }
@@ -62,25 +62,25 @@ public class LootChestBlock extends BlockSM
 
             case 1: // armour
 
-                if (Chance <= 3)
+                if (Chance <= 5)
                 {
                     return Items.leather;
                 }
-                else if (Chance <= 4 )
+                else if (Chance <= 12 )
                 {
                     return Items.arrow;
                 }
-                else if (Chance <= 6 )
+                else if (Chance <= 20 )
                 {
                     return Item.getItemFromBlock(Blocks.torch);
                 }
-                else if (Chance <= 9)
+                else if (Chance <= 25)
                 {
-                    return Items.paper;
+                    return Items.ender_pearl;
                 }
                 else
                 {
-                    return Items.compass;
+                    return Items.quartz;
                 }
 
 
@@ -91,11 +91,11 @@ public class LootChestBlock extends BlockSM
                 {
                     return Items.string;
                 }
-                else if (Chance <= 6)
+                else if (Chance <= 15)
                 {
                     return Items.wheat;
                 }
-                else if (Chance <= 8)
+                else if (Chance <= 25)
                 {
                     return Items.apple;
                 }
@@ -109,8 +109,6 @@ public class LootChestBlock extends BlockSM
             case 3:
                 return Items.stick;
             case 4:
-                return Items.stick;
-            case 5:
                 return Items.stick;
 
             default:
@@ -126,7 +124,7 @@ public class LootChestBlock extends BlockSM
      */
     public int quantityDropped(Random random)
     {
-        return 3 + random.nextInt(5);
+        return 4 + random.nextInt(8);
     }
 
     /**
