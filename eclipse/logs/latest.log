@@ -1,28 +1,34 @@
-[22:57:32] [main/INFO]: Setting user: Player108
-[22:57:34] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:57:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
-[22:57:48] [Sound Library Loader/INFO]: Sound engine started
-[22:57:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:57:49] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[22:57:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
-[22:57:50] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[22:57:50] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[22:57:51] [Sound Library Loader/INFO]: Sound engine started
-[22:57:51] [Client thread/ERROR]: ########## GL ERROR ##########
-[22:57:51] [Client thread/ERROR]: @ Post startup
-[22:57:51] [Client thread/ERROR]: 1281: Invalid value
-[22:58:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:58:00] [Server thread/INFO]: Generating keypair
-[22:58:01] [Server thread/INFO]: Converting map!
-[22:58:01] [Server thread/INFO]: Scanning folders...
-[22:58:01] [Server thread/INFO]: Total conversion count is 0
-[22:58:02] [Server thread/INFO]: Preparing start region for level 0
-[22:58:03] [Server thread/INFO]: Changing view distance to 8, from 10
-[22:58:03] [Server thread/INFO]: Player108[local:E:60ea2758] logged in with entity id 23 at (66.5, 4.0, 724.5)
-[22:58:03] [Server thread/INFO]: Player108 joined the game
-[22:58:06] [Server thread/INFO]: Player108 has just earned the achievement [Taking Inventory]
-[22:58:06] [Client thread/INFO]: [CHAT] Player108 has just earned the achievement [Taking Inventory]
-[22:58:06] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@1f46c74f[id=27630cc8-9d92-34f7-8c10-85caa979d8b3,name=Player108,properties={},legacy=false]
+[23:37:54] [main/INFO]: Setting user: Player170
+[23:37:56] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:38:05] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
+[23:38:06] [Sound Library Loader/INFO]: Sound engine started
+[23:38:08] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:38:08] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:38:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
+[23:38:09] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:38:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:38:10] [Sound Library Loader/INFO]: Sound engine started
+[23:38:10] [Client thread/ERROR]: ########## GL ERROR ##########
+[23:38:10] [Client thread/ERROR]: @ Post startup
+[23:38:10] [Client thread/ERROR]: 1281: Invalid value
+[23:38:19] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[23:38:19] [Server thread/INFO]: Generating keypair
+[23:38:19] [Server thread/INFO]: Converting map!
+[23:38:19] [Server thread/INFO]: Scanning folders...
+[23:38:19] [Server thread/INFO]: Total conversion count is 0
+[23:38:20] [Server thread/INFO]: Preparing start region for level 0
+[23:38:21] [Server thread/INFO]: Preparing spawn area: 5%
+[23:38:22] [Server thread/INFO]: Preparing spawn area: 12%
+[23:38:23] [Server thread/INFO]: Preparing spawn area: 21%
+[23:38:27] [Server thread/INFO]: Preparing spawn area: 34%
+[23:38:28] [Server thread/INFO]: Preparing spawn area: 49%
+[23:38:29] [Server thread/INFO]: Preparing spawn area: 64%
+[23:38:30] [Server thread/INFO]: Preparing spawn area: 75%
+[23:38:31] [Server thread/INFO]: Preparing spawn area: 88%
+[23:38:32] [Server thread/INFO]: Changing view distance to 12, from 10
+[23:38:32] [Server thread/INFO]: Player170[local:E:24e79e09] logged in with entity id 231 at (96.5, 72.0, 259.5)
+[23:38:32] [Server thread/INFO]: Player170 joined the game
+[23:38:34] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@3a563fa9[id=005a1bfb-b3e4-37aa-87e8-3ba2c8463cf4,name=Player170,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
@@ -84,15 +90,58 @@ Caused by: java.security.cert.CertificateException: No name matching sessionserv
 	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
 	... 18 more
-[22:59:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3123ms behind, skipping 62 tick(s)
-[23:01:28] [Server thread/INFO]: Saving and pausing game...
-[23:01:28] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:01:28] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:01:28] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:01:29] [Server thread/INFO]: Stopping server
-[23:01:29] [Server thread/INFO]: Saving players
-[23:01:29] [Server thread/INFO]: Saving worlds
-[23:01:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:01:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:01:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:01:30] [Client thread/INFO]: Stopping!
+[23:38:37] [Server thread/INFO]: Player170 has just earned the achievement [Taking Inventory]
+[23:38:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4951ms behind, skipping 99 tick(s)
+[23:38:37] [Client thread/INFO]: [CHAT] Player170 has just earned the achievement [Taking Inventory]
+[23:38:47] [Client thread/INFO]: Warning: Clientside chunk ticking took 250 ms
+[23:38:47] [Client thread/INFO]: Warning: Clientside chunk ticking took 215 ms
+[23:38:49] [Client thread/INFO]: Warning: Clientside chunk ticking took 154 ms
+[23:38:53] [Client thread/INFO]: Warning: Clientside chunk ticking took 221 ms
+[23:38:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 270 ms
+[23:38:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
+[23:39:05] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12391ms behind, skipping 247 tick(s)
+[23:39:11] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3717ms behind, skipping 74 tick(s)
+[23:39:17] [Server thread/INFO]: Saving and pausing game...
+[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:39:17] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:39:23] [Server thread/INFO]: Changing view distance to 9, from 12
+[23:40:06] [Server thread/INFO]: [Player170: Set own game mode to Survival Mode]
+[23:40:06] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[23:40:20] [Server thread/INFO]: [Player170: Set own game mode to Creative Mode]
+[23:40:20] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[23:41:08] [Client thread/INFO]: [CHAT] Seed: -3281329955902248917
+[23:41:15] [Server thread/INFO]: [Player170: Set own game mode to Survival Mode]
+[23:41:15] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[23:41:38] [Server thread/INFO]: Saving and pausing game...
+[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:42:43] [Client thread/INFO]: Warning: Clientside chunk ticking took 160 ms
+[23:43:30] [Server thread/INFO]: Saving and pausing game...
+[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:43:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:43:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Sandbox mod
+[23:43:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:43:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[23:43:42] [Sound Library Loader/INFO]: Sound engine started
+[23:47:03] [Client thread/INFO]: Warning: Clientside chunk ticking took 106 ms
+[23:49:20] [Server thread/WARN]: Player170 moved wrongly!
+[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 157 ms
+[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 115 ms
+[23:49:37] [Client thread/INFO]: Warning: Clientside chunk ticking took 113 ms
+[23:49:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 141 ms
+[23:54:41] [Server thread/INFO]: Player170 was slain by Zombie
+[23:54:41] [Client thread/INFO]: [CHAT] Player170 was slain by Zombie
+[23:54:46] [Server thread/INFO]: Saving and pausing game...
+[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:54:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:54:47] [Server thread/INFO]: Stopping server
+[23:54:47] [Server thread/INFO]: Saving players
+[23:54:47] [Server thread/INFO]: Saving worlds
+[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:54:47] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:54:50] [Client thread/INFO]: Stopping!

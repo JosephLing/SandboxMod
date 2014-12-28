@@ -44,7 +44,7 @@ public class ConfiguartionHandler
     {
         DG_LOAD = configuration.getBoolean("LoadDG", Configuration.CATEGORY_GENERAL, true, "example config value");
 
-        DG_nTRIES = configuration.getInt("nDungeonRoomTries", Configuration.CATEGORY_GENERAL,100 ,2500, 1, "the number of attempts to create a room");
+        DG_nTRIES = configuration.getInt("nDungeonRoomTries", Configuration.CATEGORY_GENERAL,100, 250 ,2500, "the number of attempts to create a room");
         DG_XSIZE = configuration.getInt("DungeonXsize", Configuration.CATEGORY_GENERAL,50, 30, 500, "how large the dungeon will be in the X direction");
         DG_ZSIZE = configuration.getInt("DungeonZsize", Configuration.CATEGORY_GENERAL,50, 30, 500, "how large the dungeon will be in the Z direction");
         DG_YValue = configuration.getInt("DungeonYvalue", Configuration.CATEGORY_GENERAL,50,3,100,"the value of y in which the dungeon will spawn");

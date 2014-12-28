@@ -19,6 +19,8 @@ public final class Names
     public static final class Blocks
     {
         public static final String EXAMPLE_BLOCK = "ExampleBlock";
+        public static final String LOOTCHEST_BLOCK = "LootChest";
+
     }
 
     public static final class Keys

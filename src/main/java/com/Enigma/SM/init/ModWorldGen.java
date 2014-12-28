@@ -20,7 +20,7 @@ public class ModWorldGen
         {
             GameRegistry.registerWorldGenerator(new Dungeon(), 0);
         }
-        //GameRegistry.registerWorldGenerator(new ChunkBoundaries(), 0);
+        //GameRegistry.registerWorldGenerator(new TestChest(), 0);
 
 
         Log.info("world gen done :)");
