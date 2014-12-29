@@ -40,9 +40,6 @@ public class SandboxMod
         // has to be called after blocks and items are initialized
         ModWorldGen.init();
 
-        LogHelper.info(ConfiguartionHandler.DG_LOAD);
-        LogHelper.info(ConfiguartionHandler.DG_XSIZE);
-
         LogHelper.info("Pre initalisation complete :)");
 
     }

@@ -5,9 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.WeightedRandom;
-import net.minecraft.util.WeightedRandomChestContent;
-import net.minecraftforge.common.ChestGenHooks;
+
 
 import java.util.Random;
 
@@ -37,7 +35,7 @@ public class LootChestBlock extends BlockSM
         switch (ItemType) {
             case 0: // precious metals
 
-                if (Chance == 8)
+                if (Chance <= 8)
                 {
                     return Items.coal;
                 }
@@ -68,13 +66,17 @@ public class LootChestBlock extends BlockSM
                 }
                 else if (Chance <= 12 )
                 {
-                    return Items.arrow;
+                    return Items.feather;
                 }
-                else if (Chance <= 20 )
+                else if (Chance <= 18 )
                 {
-                    return Item.getItemFromBlock(Blocks.torch);
+                    return Items.flint;
                 }
-                else if (Chance <= 25)
+                else if (Chance <= 22 )
+                {
+                    return Items.coal;
+                }
+                else if (Chance <= 27)
                 {
                     return Items.ender_pearl;
                 }
@@ -95,7 +97,7 @@ public class LootChestBlock extends BlockSM
                 {
                     return Items.wheat;
                 }
-                else if (Chance <= 25)
+                else if (Chance <= 27)
                 {
                     return Items.apple;
                 }
@@ -124,7 +126,7 @@ public class LootChestBlock extends BlockSM
      */
     public int quantityDropped(Random random)
     {
-        return 4 + random.nextInt(8);
+        return 1 + random.nextInt(3);
     }
 
     /**
