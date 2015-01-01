@@ -17,6 +17,6 @@ item.sandboxmod:SwordTest.name=it worked!
 item.sandboxmod:IngotTest.name=mod ignot
 
 # block localizations
-tile.sandboxmod:ExampleBlock.name=Legendary Example Block
+tile.sandboxmod:ExampleBlock.name=Rubble
 tile.sandboxmod:LootChest.name=Random Chest Loot
 

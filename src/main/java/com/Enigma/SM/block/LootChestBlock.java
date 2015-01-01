@@ -22,12 +22,7 @@ public class LootChestBlock extends BlockSM
     public Item getItemDropped(int p_149650_1_, Random random, int p_149650_3_)
     {
         /*
-        Need to create a seperate class to deal with the loot specailly if other mods want to add items in.
-
-        items to add:
-        - paper
-        - torches
-        - string (maybe)
+        should probably create a seperate class to deal with the loot specailly if other mods want to add items in.
         */
 
         int ItemType = random.nextInt(5);
@@ -126,7 +121,7 @@ public class LootChestBlock extends BlockSM
      */
     public int quantityDropped(Random random)
     {
-        return 1 + random.nextInt(3);
+        return 3 + random.nextInt(3);
     }
 
     /**
